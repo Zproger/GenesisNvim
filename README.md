@@ -2,7 +2,7 @@
 <h1 align="center">GenesisNvim</h1>
 
 <h4 align="center">
-  <a href="https://github.com/Zproger/GenesisNvim/edit/main/README.md#-installation">Installation</a>
+  <a href="https://github.com/Zproger/GenesisNvim#-installation">Installation</a>
   ·
   <a href="https://www.youtube.com/@zproger">Youtube</a>
   ·
@@ -39,4 +39,19 @@ A minimalistic nvim config aimed at Python developers. It is a lightweight repla
 - Quick search via Telescope
 
 ## 🌟 Installation
+- If you already have neovim, make backups of your configuration.
+- Remove the current nvim configuration if it exists:
 
+```sh
+rm -rf ~/.config/nvim
+```
+
+- Execute the command to install:
+
+```sh
+  curl -sSl https://raw.githubusercontent.com/Zproger/GenesisNvim/main/install.sh | bash
+```
+
+## 🌟 Other
+- The project is ready for development, so I accept all your ideas. You can contact me or open `Issues` to make your edits or suggest improvements. Thank you.
+- To learn the tool key combinations, press `Space`, after the prompt, select the desired menu. To analyze and change key combinations, go to `~/.config/nvim/lua/core` and `~/.config/nvim/lua/plugins`.
