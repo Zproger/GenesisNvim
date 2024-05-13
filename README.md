@@ -2,7 +2,7 @@
 <h1 align="center">GenesisNvim</h1>
 
 <h4 align="center">
-  <a href="#">Docs</a>
+  <a href="https://github.com/Zproger/GenesisNvim/edit/main/README.md#-installation">Installation</a>
   ·
   <a href="https://www.youtube.com/@zproger">Youtube</a>
   ·
@@ -23,3 +23,20 @@ A minimalistic nvim config aimed at Python developers. It is a lightweight repla
 ![Images](Images/4.png)
 
 ![Images](Images/5.png)
+
+## 🌟 What it is?
+- There are many forks of nvim, but what does this one do? The main purpose of this config is to create a minimal environment for Python development, so that it is not resource-hungry and can be deployed quickly on Linux systems.
+- It can be difficult for beginners to install all the necessary plugins and LSP servers to get started. Here you don't need to do anything, just execute 1 command and immediately use auto-tips, Ruff formatting, Mypy fixes and all other tricks.
+
+## ✨ Features
+- Python autocomplete with Pyright by default
+- Support for default Ruff formatting and fixing
+- Fast startup in just 140ms
+- Catalog trees, support for TODO tags, navigation plugins, Git
+- Support over 30 color schemes
+- Support for diagnostics and LSP by default
+- Built-in floating terminal that can be opened separately
+- Quick search via Telescope
+
+## 🌟 Installation
+
