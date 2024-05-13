@@ -56,7 +56,7 @@ sudo apt install git npm  # Debian
 ```sh
 mkdir -p ~/.config/nvim
 git clone https://github.com/Zproger/GenesisNvim.git ~/.config/nvim
-nvim -c "MasonInstall mypy ruff-lsp mypy"
+nvim -c "MasonInstall pyright ruff-lsp mypy"
 ```
 
 ## 🌟 Other
