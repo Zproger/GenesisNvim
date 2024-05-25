@@ -40,10 +40,13 @@ A minimalistic nvim config aimed at Python developers. It is a lightweight repla
 
 ## 🌟 Installation
 - If you already have neovim, make backups of your configuration.
-- Remove the current nvim configuration if it exists:
+- Remove the current nvim configuration and cache if it exists:
 
 ```sh
 rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
 ```
 
 - Execute the commands to install:
