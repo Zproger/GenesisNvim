@@ -43,10 +43,7 @@ A minimalistic nvim config aimed at Python developers. It is a lightweight repla
 - Remove the current nvim configuration and cache if it exists:
 
 ```sh
-rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim
-rm -rf ~/.local/state/nvim
-rm -rf ~/.cache/nvim
+rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 ```
 
 - Execute the commands to install:
