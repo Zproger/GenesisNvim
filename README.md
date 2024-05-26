@@ -63,3 +63,4 @@ nvim -c "MasonInstall pyright ruff-lsp mypy"
 ## 🌟 Other
 - The project is ready for development, so I accept all your ideas. You can contact me or open `Issues` to make your edits or suggest improvements.
 - To learn the tool key combinations, press `Space`, after the prompt, select the desired menu. To analyze and change key combinations, go to `~/.config/nvim/lua/core` and `~/.config/nvim/lua/plugins`.
+- Video overview of this configuration: https://youtu.be/XhdwvHhFROc.
