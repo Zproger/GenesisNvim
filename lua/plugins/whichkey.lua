@@ -1,49 +1,39 @@
-
 local wk = require("which-key")
 
-wk.register({
-	f = {
-		name = "Find",
-		f = {"Find File"},
-		t = {"Find Text"},
-		b = {"Find Buffer"},
-		h = {"Find Help"},
-	},
+wk.add({
 
-	g = {
-		name = "Git",
-		b = "Open Branches",
-		c = "Open Commits",
-		s = "Open Status",
-	},
+  -- Find
+  { "<leader>f", group = "File" },
+  { "<leader>ff", desc = "Find File", mode = "n" },
+  { "<leader>ft", desc = "Find Text", mode = "n" },
+  { "<leader>fb", desc = "Find Buffer", mode = "n"},
 
-    e = {"Open Diagnostic Window"},
+  -- Git
+  { "<leader>g", group = "Git" },
+  { "<leader>gb", desc = "Open Branches", mode = "n" },
+  { "<leader>gc", desc = "Open Commits", mode = "n" },
+  { "<leader>gs", desc = "Open Status", mode = "n"},
 
-    l = {
-        name = "LSP",
-        D = "Declaration",
-        d = "Definition",
-        k = "Hover",
-    },
+  -- Diagnostic
+  { "<leader>e", "<cmd>lua vim.diagnostic.open_float()<cr>", desc = "Open Diagnostic Window"},
 
-    t = {
-        name = "NvimTree",
-        t = "Tree Toggle",
-        f = "Tree Focus",
-    },
+  -- LSP
+  { "<leader>lD", "<cmd>lua vim.lsp.buf.declaration()<cr>", desc = "Declaration" },
+  { "<leader>ld", "<cmd>lua vim.lsp.buf.definition()<cr>", desc = "Definition" },
+  { "<leader>lk", "<cmd>lua vim.lsp.buf.hover()<cr>", desc = "Hover" },
 
-    n = {
-        name = "TodoList",
-        l = "Open List"
-    },
+  -- NvimTree
+  { "<leader>tt", "<cmd>NvimTreeToggle<cr>", desc = "Tree Toggle" },
+  { "<leader>tf", "<cmd>NvimTreeFocus<cr>", desc = "Tree Focus" },
 
-    s = {"Open Terminal"},
+  { "<leader>nl", "<cmd>TodoTelescope<cr>", desc = "Open List" },
 
-    r = {"Ruff"},
+  -- Terminal
+  { "<leader>ts", "<cmd>ToggleTerm<cr>", desc = "Open Terminal" },
 
-    c = {
-        name = "Color Schemes",
-        s = "Open"
-    }
+  -- Ruff
+  { "<leader>r", desc = "Ruff" },
 
-}, {prefix = "<leader>"})
+  -- Color Schees
+  { "<leader>cs", "<cmd>colorscheme<cr>", desc = "Open Color Schemes" }
+})

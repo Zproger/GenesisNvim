@@ -1,4 +1,6 @@
 
+vim.api.nvim_buf_set_option(0, 'modifiable', true)
+
 -- Basic Settings
 vim.g.did_load_filetypes = 1
 vim.g.formatoptions = "qrn1"
