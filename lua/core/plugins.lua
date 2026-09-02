@@ -14,7 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	
-	{ 'nvim-treesitter/nvim-treesitter' },
+	{ 'nvim-treesitter/nvim-treesitter', branch = 'master' },
 	{ 'neovim/nvim-lspconfig' },
 
 	-- Autocomplete support
