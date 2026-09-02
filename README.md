@@ -51,10 +51,12 @@ rm -rf ~/.config/nvim ~/.local/share/nvim ~/.local/state/nvim ~/.cache/nvim
 - Execute the commands to install:
 
 ```sh
-sudo pacman -S git npm  # Arch
-sudo apt install git npm  # Debian
-brew install git npm  # MacOS
+sudo pacman -S git npm neovim  # Arch
+sudo apt install git npm neovim  # Debian
+brew install git npm neovim  # MacOS
 ```
+
+> Debian/Ubuntu's `apt` package can lag behind the minimum required Neovim version. If `nvim -v` reports below 0.9, install a current release from the [official Neovim releases page](https://github.com/neovim/neovim/releases) or its [PPA](https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu) instead.
 
 ```sh
 mkdir -p ~/.config/nvim
