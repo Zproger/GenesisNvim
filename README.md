@@ -39,6 +39,7 @@ A minimalistic nvim config aimed at Python developers. It is a lightweight repla
 - Quick search via Telescope
 
 ## 🌟 Installation
+- Requires Neovim >= 0.9.
 - If you already have neovim, make backups of your configuration.
 - Remove the current nvim configuration and cache if it exists:
 
