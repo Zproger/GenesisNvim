@@ -1,49 +1,36 @@
 
 local wk = require("which-key")
 
-wk.register({
-	f = {
-		name = "Find",
-		f = {"Find File"},
-		t = {"Find Text"},
-		b = {"Find Buffer"},
-		h = {"Find Help"},
-	},
+wk.add({
+    { "<leader>f", group = "Find" },
+    { "<leader>ff", desc = "Find File" },
+    { "<leader>ft", desc = "Find Text" },
+    { "<leader>fb", desc = "Find Buffer" },
+    { "<leader>fh", desc = "Find Help" },
 
-	g = {
-		name = "Git",
-		b = "Open Branches",
-		c = "Open Commits",
-		s = "Open Status",
-	},
+    { "<leader>g", group = "Git" },
+    { "<leader>gb", desc = "Open Branches" },
+    { "<leader>gc", desc = "Open Commits" },
+    { "<leader>gs", desc = "Open Status" },
 
-    e = {"Open Diagnostic Window"},
+    { "<leader>e", desc = "Open Diagnostic Window" },
 
-    l = {
-        name = "LSP",
-        D = "Declaration",
-        d = "Definition",
-        k = "Hover",
-    },
+    { "<leader>l", group = "LSP" },
+    { "<leader>lD", desc = "Declaration" },
+    { "<leader>ld", desc = "Definition" },
+    { "<leader>lk", desc = "Hover" },
 
-    t = {
-        name = "NvimTree",
-        t = "Tree Toggle",
-        f = "Tree Focus",
-    },
+    { "<leader>t", group = "NvimTree" },
+    { "<leader>tt", desc = "Tree Toggle" },
+    { "<leader>tf", desc = "Tree Focus" },
 
-    n = {
-        name = "TodoList",
-        l = "Open List"
-    },
+    { "<leader>n", group = "TodoList" },
+    { "<leader>nl", desc = "Open List" },
 
-    s = {"Open Terminal"},
+    { "<leader>s", desc = "Open Terminal" },
 
-    r = {"Ruff"},
+    { "<leader>r", desc = "Ruff" },
 
-    c = {
-        name = "Color Schemes",
-        s = "Open"
-    }
-
-}, {prefix = "<leader>"})
+    { "<leader>c", group = "Color Schemes" },
+    { "<leader>cs", desc = "Open" },
+})
