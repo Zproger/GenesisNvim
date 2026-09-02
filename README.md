@@ -40,6 +40,7 @@ A minimalistic nvim config aimed at Python developers. It is a lightweight repla
 
 ## 🌟 Installation
 - Requires Neovim >= 0.9.
+- Requires a [Nerd Font](https://www.nerdfonts.com/) installed and selected as your terminal font, otherwise file icons will render as missing glyphs (boxes/question marks).
 - If you already have neovim, make backups of your configuration.
 - Remove the current nvim configuration and cache if it exists:
 

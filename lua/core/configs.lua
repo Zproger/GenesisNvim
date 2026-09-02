@@ -9,7 +9,6 @@ vim.opt.wrap = false
 vim.wo.linebreak = true
 vim.opt.virtualedit = "block"
 vim.opt.undofile = true
-vim.opt.shell = "/bin/fish"            -- Shell по умолчанию
 vim.opt.swapfile = false               -- Отключить swap файлы nvim
 vim.opt.encoding = "utf-8"             -- Кодировка utf-8
 vim.opt.cursorline = true              -- Выделять активную строку где находится курсор
