@@ -13,7 +13,7 @@ vim.opt.shell = "/bin/fish"            -- Shell по умолчанию
 vim.opt.swapfile = false               -- Отключить swap файлы nvim
 vim.opt.encoding = "utf-8"             -- Кодировка utf-8
 vim.opt.cursorline = true              -- Выделять активную строку где находится курсор
-vim.opt.fileformat = "unix"
+vim.opt_global.fileformat = "unix"
 
 -- Nvim-Tree
 vim.g.loaded_netrw = 1
