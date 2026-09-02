@@ -117,14 +117,6 @@ require("lazy").setup({
 	{ 'RRethy/vim-illuminate' },
 
 	{
-	    "vhyrro/luarocks.nvim",
-	    priority = 1001, -- this plugin needs to run before anything else
-	    opts = {
-	        rocks = { "magick" },
-	    },
-	},
-
-	{
 	 "folke/trouble.nvim",
 	 dependencies = { "nvim-tree/nvim-web-devicons" },
 	 opts = {
