@@ -57,10 +57,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
     -- Buffer local mappings.
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     local opts = { buffer = ev.buf }
-    vim.keymap.set('n', 'lD', vim.lsp.buf.declaration, opts)
-    vim.keymap.set('n', 'ld', vim.lsp.buf.definition, opts)
-    vim.keymap.set('n', 'lk', vim.lsp.buf.hover, opts)
-    vim.keymap.set('n', 'i', vim.lsp.buf.implementation, opts)
+    vim.keymap.set('n', '<leader>lD', vim.lsp.buf.declaration, opts)
+    vim.keymap.set('n', '<leader>ld', vim.lsp.buf.definition, opts)
+    vim.keymap.set('n', '<leader>lk', vim.lsp.buf.hover, opts)
+    vim.keymap.set('n', '<leader>li', vim.lsp.buf.implementation, opts)
     vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
     
     -- vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, opts)
