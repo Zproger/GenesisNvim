@@ -1,5 +1,14 @@
 
-require('Comment').setup()
+return {
+  'numToStr/Comment.nvim',
+  keys = {
+    { 'gc', mode = { 'n', 'v' } },
+    { 'gb', mode = { 'n', 'v' } },
+  },
+  config = function()
+    require('Comment').setup()
+  end,
+}
 
 -- `gcc` - Toggles the current line using linewise comment
 -- `gbc` - Toggles the current line using blockwise comment
@@ -7,4 +16,3 @@ require('Comment').setup()
 -- `[count]gbc` - Toggles the number of line given as a prefix-count using blockwise
 -- `gc[count]{motion}` - (Op-pending) Toggles the region using linewise comment
 -- `gb[count]{motion}` - (Op-pending) Toggles the region using blockwise comment
-
