@@ -69,5 +69,32 @@ vim.opt.fillchars = {
     foldclose = "▸"
 }
 
+-- ALE lint timing. Must be set before ALE itself loads (it decides which
+-- autocommands to register from these at load time) — ALE is ft-lazy
+-- loaded, so setting this here at startup is early enough.
+vim.g.ale_lint_on_text_changed = 'never'   -- не сканировать на каждое изменение текста
+vim.g.ale_lint_on_insert_leave = 1         -- сканировать когда вышел из insert-режима
+vim.g.ale_lint_on_save = 1                 -- и при сохранении
+vim.g.ale_lint_on_enter = 1                -- и при открытии файла
+
 vim.cmd([[highlight clear LineNr]])
 vim.cmd([[highlight clear SignColumn]])
+
+-- Diagnostics (LSP + ALE both feed this same API on Neovim >= 0.7)
+-- Keep errors/warnings out of the way instead of pinned inline; show the
+-- full message on demand (hover, or <space>e).
+vim.diagnostic.config({
+    virtual_text = false,          -- не держать текст ошибки постоянно в строке
+    underline = false,             -- не подчёркивать постоянно
+    signs = true,                  -- значок в колонке слева — единственный постоянный индикатор
+    update_in_insert = false,      -- не дёргать диагностику пока печатаешь
+    severity_sort = true,
+    float = { border = "rounded", source = true },
+})
+
+vim.api.nvim_create_autocmd("CursorHold", {
+    group = vim.api.nvim_create_augroup("DiagnosticHover", { clear = true }),
+    callback = function()
+        vim.diagnostic.open_float(nil, { focus = false })
+    end,
+})
